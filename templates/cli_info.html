@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}CLI info{% endblock %}
+{% block body %}
+A command line window just opened (if you're a Windows user anyway)...
+run python meme.py -h or --help for more information.
+After running meme.py, click the button bellow to view the result !
+
+
+<div class="nav">
+    <a class="btn btn-primary" href="{{url_for('meme_cli_result')}}">meme.py - Result</a>
+</div>
+{% endblock %}
+
+
